@@ -1,0 +1,23 @@
+{
+	"env": {
+		"node": true,
+		"mocha": true,
+		"es6": true,
+		"jest": true
+	},
+	"extends": [
+		"community",
+		"plugin:prettier/recommended",
+		"prettier/babel"
+	],
+	"parserOptions": {
+		"ecmaVersion": 6
+	},
+	"parser": "babel-eslint",
+	"plugins": [
+		"import"
+	],
+	"rules": {
+		"prettier/prettier": "error"
+	}
+}
