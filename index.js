@@ -1,4 +1,4 @@
-const handlePullRequestChange = require('./lib/handle-pull-request-change');
+const handlePullRequestChange = require('./lib/handlePullRequestChange');
 
 function probotPlugin (robot) {
   robot.on([
