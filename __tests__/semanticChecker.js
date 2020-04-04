@@ -1,4 +1,4 @@
-const semanticChecker = require("../src/semanticChecker");
+const semanticChecker = require("../lib/semanticChecker");
 
 describe("semanticChecker", () => {
   let isSemanticMessage;
