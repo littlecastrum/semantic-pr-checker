@@ -5,3 +5,6 @@ npm-debug.log
 .env
 package-lock.json
 coverage
+yarn.lock
+yarn-error.log
+.eslintcache
