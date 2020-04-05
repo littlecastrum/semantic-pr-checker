@@ -1,4 +1,4 @@
 const { toLambda } = require("probot-serverless-now");
-const app = require("..");
+const appFn = require("../app");
 
-module.exports = toLambda(app);
+module.exports = toLambda(appFn);
