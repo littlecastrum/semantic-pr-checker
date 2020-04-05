@@ -3,8 +3,8 @@ const https = require("https");
 const { promisify } = require("util");
 const nock = require("nock");
 const yaml = require("js-yaml");
-const { dedent } = require("../src/utils");
-const handlePullRequestChange = require("../src/handlePullRequestChange");
+const { dedent } = require("../lib/utils");
+const handlePullRequestChange = require("../lib/handlePullRequestChange");
 
 https.get[promisify.custom] = function getAsync(options) {
   return new Promise((resolve, reject) => {
