@@ -37,7 +37,7 @@ describe("handlePullRequestChange", () => {
     };
 
     const mock = nock("https://api.github.com")
-      .get("/repos/sally/project-x/pulls?number=123")
+      .get("/repos/sally/project-x/pulls//commits?number=123")
       .reply(200, unsemanticCommits())
       .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
       .reply(200)
@@ -62,7 +62,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -93,7 +93,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -124,7 +124,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommitsWithBadScope())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -155,7 +155,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -188,7 +188,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -219,7 +219,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -250,7 +250,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -281,7 +281,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommitsWithBadType())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -314,7 +314,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, unsemanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -338,7 +338,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, unsemanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -362,7 +362,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, [...unsemanticCommits(), ...semanticCommits()])
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -386,7 +386,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -412,7 +412,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, unsemanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -436,7 +436,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -460,7 +460,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, unsemanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -486,7 +486,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, unsemanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -510,7 +510,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)
@@ -534,7 +534,7 @@ describe("handlePullRequestChange", () => {
       };
 
       const mock = nock("https://api.github.com")
-        .get("/repos/sally/project-x/pulls?number=123")
+        .get("/repos/sally/project-x/pulls//commits?number=123")
         .reply(200, semanticCommits())
         .post("/repos/sally/project-x/statuses/abcdefg", expectedBody)
         .reply(200)

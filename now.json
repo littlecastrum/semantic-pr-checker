@@ -3,6 +3,7 @@
     "APP_ID": "@probot-api-id",
     "WEBHOOK_SECRET": "@probot-webhook-secret",
     "PRIVATE_KEY": "@probot-private-key",
-    "LOG_LEVEL": "@probot-log-level"
+    "LOG_LEVEL": "@probot-log-level",
+    "SENTRY_DSN": "@probot-sentry-dsn"
   }
 }
