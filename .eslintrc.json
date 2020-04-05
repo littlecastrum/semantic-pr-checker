@@ -6,7 +6,6 @@
 		"jest": true
 	},
 	"extends": [
-		"community",
 		"plugin:prettier/recommended",
 		"prettier/babel"
 	],

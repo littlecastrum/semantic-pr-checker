@@ -18,7 +18,8 @@
     "start": "probot run ./index.js",
     "lint": "eslint . --fix",
     "test": "jest && npm run lint",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "build": "mkdir -p public && echo 'Hello World' > public/index.html"
   },
   "dependencies": {
     "conventional-commit-types": "^3.0.0",
@@ -29,7 +30,6 @@
     "@octokit/rest": "^17.1.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-community": "^1.4.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.2",
