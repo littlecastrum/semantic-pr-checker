@@ -1,4 +1,3 @@
-const { toLambda } = require("probot-serverless-now");
 const handlePullRequestChange = require("./lib/handlePullRequestChange");
 
 function probotPlugin(robot) {
@@ -8,4 +7,4 @@ function probotPlugin(robot) {
   );
 }
 
-module.exports = toLambda(probotPlugin);
+module.exports = probotPlugin;
