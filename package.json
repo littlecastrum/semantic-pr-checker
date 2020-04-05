@@ -18,13 +18,11 @@
     "start": "probot run ./app.js",
     "lint": "eslint . --fix",
     "test": "jest && npm run lint",
-    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
-    "build": "mkdir -p public && echo 'Hello World' > public/index.html"
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
     "conventional-commit-types": "^3.0.0",
-    "probot": "^9.11.2",
-    "probot-serverless-now": "^2.1.2"
+    "probot": "^9.11.2"
   },
   "devDependencies": {
     "@octokit/rest": "^17.1.4",
